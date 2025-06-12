@@ -24,7 +24,7 @@ public class PlayerCameraMove : MonoBehaviour
 
         cameraRotation.x -= mouseY; //俯仰:camera的x对应鼠标输入世界坐标轴的Y
         cameraRotation.y += mouseX; //左右:camera的y对应鼠标输入世界坐标轴的X
-        cameraRotation.x = Mathf.Clamp(cameraRotation.x, -90f, 90f); // 限制俯仰角度防止倒转
+        cameraRotation.x = Mathf.Clamp(cameraRotation.x, -80f, 80f); // 限制俯仰角度防止倒转
         cameraTransform.rotation = Quaternion.Euler(cameraRotation.x, cameraRotation.y, 0f);
         playerTransform.rotation = Quaternion.Euler(0f, cameraRotation.y, 0f);  //让玩家的左右也跟着旋转
     }

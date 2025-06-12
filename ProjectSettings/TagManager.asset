@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - concrete
+  - glass
+  - wood
+  - dirt
+  - snow
+  - water
+  - metal
+  - grass
+  - carpet
+  - rock
+  - gravel
   layers:
   - Default
   - TransparentFX
